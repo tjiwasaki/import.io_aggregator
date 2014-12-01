@@ -18,7 +18,7 @@
   <script src="https://cdn.import.io/js/2.0.0/importio.js"></script>
 
 <!-- 2. Configure the library -->
-  <script type="text/javascript">
+  <!--<script type="text/javascript">
     importio.init({
       "auth": {
         "userGuid": "604b9513-ab10-47e8-8981-4404f88a08e7",
@@ -71,6 +71,8 @@
 
     $( document ).ready(function() {
       // Query for tile ScrubsMagTopStories
+      var el = document.getElementById('scrubsmag');
+      el.textContent =
       importio.query({
         "connectorGuids": [
           "d1e451af-3a62-4214-abe3-bd96846ee073"
@@ -81,10 +83,10 @@
       }, { "data": dataCallback, "done": doneCallback });
       });
 
-  </script>
+  </script>-->
   <body>
     <div class="colo-xs-6" id="scrubsmag">
+      <script type="text/javascript" src="js/importapis.js"></script>
     </div>
-<!--<script type="text/javascript" src="js/importapis.js"></script>-->
   </body>
 </html>

@@ -34,7 +34,7 @@
             document.write();
           }
           else {
-            document.write("<p>" + d.data[k] + "</p>" + "<br />");
+            document.write("<p>" + "</p>" + "<br />");
           }
     		}
     		document.write("<hr>");
@@ -51,6 +51,9 @@
 // 3. Do the query (when the function is called)
     $( document ).ready(function() {
       // Query for tile ScrubsMagTopStories
+    //Trial HTML content fix -- Not working!
+      var el = document.getElementById('scrubsmag');
+      el.textContent =
       importio.query({
         "connectorGuids": [
           "d1e451af-3a62-4214-abe3-bd96846ee073"
